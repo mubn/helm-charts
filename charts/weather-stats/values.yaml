@@ -34,9 +34,6 @@ ingress:
     - host: chart-example.local
       paths: []
   tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
 
 resources: {}
 
@@ -48,5 +45,4 @@ affinity: {}
 
 persistence:
   enabled: true
-  # storageClass: ""
   size: 1Gi
