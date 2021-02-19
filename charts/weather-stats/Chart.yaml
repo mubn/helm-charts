@@ -1,6 +1,7 @@
 apiVersion: v2
-name: chart
-description: A Helm chart for Kubernetes
+name: weather-stats
+description: "Weather Stats" is an all in one tool to gather and display atmospheric temperature-, humidity- and pressure data.
 type: application
+home: https://github.com/mubn/weather-stats
 version: 0.1.7
 appVersion: 0.1.9
