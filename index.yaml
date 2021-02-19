@@ -11,4 +11,17 @@ entries:
     urls:
     - https://github.com/mubn/helm-charts/releases/download/chart-0.1.7/chart-0.1.7.tgz
     version: 0.1.7
+  weather-stats:
+  - apiVersion: v2
+    appVersion: 0.1.9
+    created: "2021-02-19T22:55:41.176170035Z"
+    description: An all in one tool to gather and display atmospheric temperature-,
+      humidity- and pressure data
+    digest: d0050ec6fa23e518e0350177c7f645338d9d6698e2b8c658f4726f2ac924a561
+    home: https://github.com/mubn/weather-stats
+    name: weather-stats
+    type: application
+    urls:
+    - https://github.com/mubn/helm-charts/releases/download/weather-stats-0.1.7/weather-stats-0.1.7.tgz
+    version: 0.1.7
 generated: "2021-02-18T22:03:10.910871078Z"
