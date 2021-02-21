@@ -39,9 +39,11 @@ spec:
                 secretKeyRef:
                   key:  password
                   name: {{ include "chart.fullname" . }}
+          {{- if .Values.persistence.enabled }}
           volumeMounts:
             - mountPath: /db
               name: {{ include "chart.fullname" . }}
+          {{- end }}
           lifecycle:
             postStart:
               exec:
@@ -70,6 +72,7 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
     {{- end }}
+  {{- if .Values.persistence.enabled }}
   volumeClaimTemplates:
   - metadata:
       name: {{ include "chart.fullname" . }}
@@ -82,3 +85,4 @@ spec:
       {{- if .Values.persistence.storageClass }}
       storageClassName: {{ .Values.persistence.storageClass }}
       {{- end }}
+  {{- end }}
