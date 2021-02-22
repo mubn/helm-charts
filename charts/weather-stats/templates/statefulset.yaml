@@ -43,11 +43,11 @@ spec:
           volumeMounts:
             - mountPath: /db
               name: {{ include "chart.fullname" . }}
-          {{- end }}
           lifecycle:
             postStart:
               exec:
                 command: ["/bin/sh", "-c", "chown www-data:www-data /db"]
+          {{- end }}
           ports:
             - name: http
               containerPort: 8080
