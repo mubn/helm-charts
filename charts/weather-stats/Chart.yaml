@@ -3,5 +3,5 @@ name: weather-stats
 description: "An all in one tool to gather and display atmospheric temperature-, humidity- and pressure data"
 type: application
 home: "https://github.com/mubn/weather-stats"
-version: "0.1.7"
+version: "0.1.8"
 appVersion: "0.1.9"
