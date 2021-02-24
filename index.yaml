@@ -14,6 +14,18 @@ entries:
   weather-stats:
   - apiVersion: v2
     appVersion: 0.1.9
+    created: "2021-02-24T21:40:34.095507005Z"
+    description: An all in one tool to gather and display atmospheric temperature-,
+      humidity- and pressure data
+    digest: cf5d6f4d809ca1e35b6cc8b256a8f0d0a66c67f9372b81756aa17b16e490f616
+    home: https://github.com/mubn/weather-stats
+    name: weather-stats
+    type: application
+    urls:
+    - https://github.com/mubn/helm-charts/releases/download/weather-stats-0.1.8/weather-stats-0.1.8.tgz
+    version: 0.1.8
+  - apiVersion: v2
+    appVersion: 0.1.9
     created: "2021-02-19T22:55:41.176170035Z"
     description: An all in one tool to gather and display atmospheric temperature-,
       humidity- and pressure data
