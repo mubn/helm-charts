@@ -1,0 +1,46 @@
+replicaCount: 1
+
+strategyType: Recreate
+
+image:
+  repository: inettech/weather-server
+  pullPolicy: IfNotPresent
+
+app:
+  database: ""
+  authDomain: ""
+  authAudience: ""
+  appDomain: ""
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: true
+  annotations: {}
+  name:
+
+podSecurityPolicy:
+  enabled: false
+  name:
+
+service:
+  type: ClusterIP
+  port: 3000
+
+ingress:
+  enabled: false
+  annotations: {}
+  hosts:
+    - host: chart-example.local
+      paths: []
+  tls: []
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
