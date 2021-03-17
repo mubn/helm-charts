@@ -11,6 +11,18 @@ entries:
     urls:
     - https://github.com/mubn/helm-charts/releases/download/chart-0.1.7/chart-0.1.7.tgz
     version: 0.1.7
+  weather-server:
+  - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2021-03-17T22:10:32.374059701Z"
+    description: Weather data collector and distributor
+    digest: 663bb9eb504652753b3e1263b6463e2f1db26968e09a0e5955202d8e0a79a62d
+    home: https://github.com/mubn/weather-server
+    name: weather-server
+    type: application
+    urls:
+    - https://github.com/mubn/helm-charts/releases/download/weather-server-0.1.1/weather-server-0.1.1.tgz
+    version: 0.1.1
   weather-stats:
   - apiVersion: v2
     appVersion: 0.1.9
@@ -36,4 +48,4 @@ entries:
     urls:
     - https://github.com/mubn/helm-charts/releases/download/weather-stats-0.1.7/weather-stats-0.1.7.tgz
     version: 0.1.7
-generated: "2021-02-18T22:03:10.910871078Z"
+generated: "2021-03-17T22:10:32.374558863Z"
